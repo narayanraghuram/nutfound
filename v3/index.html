@@ -5,56 +5,45 @@
   type="text/javascript"
   src="https://plug-platform.devrev.ai/static/plug.js"
 ></script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NovaTech AI Gadgets</title>
+  <title>Nutanix AHV Support</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background: #f4f4f9;
-      color: #333;
+      background: #f9fafc;
+      color: #2d2d2d;
     }
     header {
-      background: #141e30;
-      color: #fff;
+      background: #23395d;
+      color: white;
       padding: 2rem;
       text-align: center;
     }
-    .products {
-      display: flex;
-      justify-content: space-around;
+    section {
       padding: 2rem;
-      flex-wrap: wrap;
+      max-width: 900px;
+      margin: auto;
     }
-    .product {
-      background: white;
+    h2, h3 {
+      color: #23395d;
+    }
+    .category {
+      margin-bottom: 2rem;
+    }
+    .tip-box {
+      background: #e9f5ff;
+      border-left: 4px solid #3498db;
       padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin: 1rem;
-      max-width: 300px;
+      margin-top: 2rem;
+      font-size: 0.95rem;
     }
-    .product h3 {
-      margin-top: 0;
-    }
-    .chatbot-hint {
-      position: fixed;
-      bottom: 90px;
-      right: 30px;
-      background: #fff;
-      border-radius: 8px;
-      padding: 0.5rem 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      font-size: 0.9rem;
-      z-index: 1000;
-    }
-    .footer {
+    footer {
       text-align: center;
       padding: 1rem;
-      font-size: 0.8rem;
-      color: #888;
+      font-size: 0.85rem;
+      color: #777;
     }
   </style>
 </head>
@@ -67,43 +56,77 @@
     });
     
 </script>
-        
-      
   <header>
-    <h1>Welcome to NovaTech</h1>
-    <p>Explore our futuristic AI gadgets and smart devices</p>
+    <h1>Nutanix AHV Support Hub</h1>
+    <p>Ask anything about AHV or open a support ticket through our intelligent assistant</p>
   </header>
 
-  <section class="products">
-    <div class="product">
-      <h3>NeuralPods</h3>
-      <p>Wireless neural interface audio gear with device sync and noise cancellation.</p>
+  <section>
+    <h2>🔍 What can you ask?</h2>
+    <p>Our chatbot is ready to assist with common questions around Nutanix AHV. Below are some areas where it can help:</p>
+
+    <div class="category">
+      <h3>🧠 AHV Overview</h3>
+      <ul>
+        <li>What is Nutanix AHV?</li>
+        <li>How does AHV compare with VMware ESXi?</li>
+        <li>What are the components of the AHV stack?</li>
+      </ul>
     </div>
-    <div class="product">
-      <h3>AutoChef</h3>
-      <p>Your AI-powered smart kitchen robot that cooks, learns, and evolves.</p>
+
+    <div class="category">
+      <h3>💻 VM Lifecycle Management</h3>
+      <ul>
+        <li>How to create or delete a VM?</li>
+        <li>Can I clone a VM in Prism?</li>
+        <li>How do I resize a VM or add a NIC?</li>
+      </ul>
     </div>
-    <div class="product">
-      <h3>EchoWall</h3>
-      <p>Ambient wall speaker that responds to your environment and mood.</p>
+
+    <div class="category">
+      <h3>🌐 Networking</h3>
+      <ul>
+        <li>Configuring AHV network segmentation</li>
+        <li>Understanding Open vSwitch</li>
+        <li>Troubleshooting VM network connectivity</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h3>💾 Storage</h3>
+      <ul>
+        <li>Managing storage policies</li>
+        <li>Allocating storage to VMs</li>
+        <li>Handling performance alerts</li>
+      </ul>
+    </div>
+
+    <h2>📩 Need more help?</h2>
+    <p>If you’re experiencing an issue or can’t find the answer you're looking for, just type:</p>
+    <blockquote>"I need to open a support ticket."</blockquote>
+    <p>Our chatbot will guide you through the ticket submission process.</p>
+
+    <div class="tip-box">
+      <strong>💡 Pro Tip:</strong> Try asking:
+      <ul>
+        <li>"Show me how to create a VM in Nutanix AHV."</li>
+        <li>"Why can't my VM access the internet in AHV?"</li>
+        <li>"How to monitor VM performance in Prism?"</li>
+      </ul>
     </div>
   </section>
 
-  <div class="chatbot-hint">
-    💬 Try asking: "Why is my AutoChef not heating evenly?"
-  </div>
+  <footer>
+    Powered by DevRev Plug • This is a demo support page for Nutanix AHV
+  </footer>
 
-  <div class="footer">
-    Powered by DevRev Plug • This is a demo site
-  </div>
-
-  <!-- DevRev Plug chatbot snippet -->
-  <script>
+  <!-- DevRev Plug Chatbot Embed -->
+  <!-- <script>
     window.devrevSettings = {
-      org_id: "don:identity:dvrv-eu-1:devo/31CcJe9Aoi:devu/1", // Replace with your DevRev org ID
-      app_id: "DvRvStPZG9uOmNvcmU6ZHZydi1ldS0xOmRldm8vMzFDY0plOUFvaTpwbHVnX3NldHRpbmcvMV9ffHxfXzIwMjUtMDYtMDYgMTE6NTI6MDUuNTQ0ODY3MjEyICswMDAwIFVUQw==xlxendsDvRv"  // Replace with your Plug app ID
+      org_id: "your_org_id_here", // Replace with your actual DevRev org ID
+      app_id: "your_app_id_here"  // Replace with your Plug app ID
     };
   </script>
-  <script src="https://cdn.devrev.ai/webchat/webchat.js"></script>
+  <script src="https://cdn.devrev.ai/webchat/webchat.js"></script> -->
 </body>
 </html>
