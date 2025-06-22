@@ -63,6 +63,14 @@
         window.plugSDK.init({
           // Please ensure you replace the app_id with your unique app id
           app_id: "DvRvStPZG9uOmNvcmU6ZHZydi1ldS0xOmRldm8vMzFDY0plOUFvaTpwbHVnX3NldHRpbmcvMV9ffHxfXzIwMjUtMDYtMDYgMTE6NTI6MDUuNTQ0ODY3MjEyICswMDAwIFVUQw==xlxendsDvRv",
+          disable_plug_chat_window: true,
+    });
+    window.plugSDK.onEvent((payload) => {
+    if (payload.type === 'ON_PLUG_WIDGET_READY') {
+        window.plugSDK.initSearchAgent();
+    }
+    });
+</script>
         });
       </script>
       
