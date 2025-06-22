@@ -45,6 +45,31 @@
       font-size: 0.85rem;
       color: #777;
     }
+    .chat-hint-bubble {
+  position: fixed;
+  bottom: 100px; /* adjust based on chatbot icon position */
+  right: 30px;
+  background: #23395d;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-size: 0.85rem;
+  z-index: 999;
+  animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   </style>
 </head>
 <body>
@@ -128,5 +153,7 @@
     };
   </script>
   <script src="https://cdn.devrev.ai/webchat/webchat.js"></script> -->
+  <div class="chat-hint-bubble">💬 Ask me anything about AHV</div>
+
 </body>
 </html>
